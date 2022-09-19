@@ -1,2 +1,2 @@
-#!/usr/bin/python3
-print("Python script")
+#!/bin/bash
+python $PYFILE

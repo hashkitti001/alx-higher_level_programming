@@ -11,4 +11,3 @@ def fizzbuzz():
             print("FizzBuzz")
         else:
             print(i)
-fizzbuzz()

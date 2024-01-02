@@ -2,5 +2,5 @@
 str1 = "Holberton"
 str2 = "School"
 space = " "
-#Just a comment 
+# Just a comment
 print(f"Welcome to {str1 + space + str2}!")

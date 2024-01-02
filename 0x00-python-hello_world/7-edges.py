@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 word = "Holberton"
 word_first_3 = word[0:3]
-word_last_2 = word[len(word) - 2 : len(word)]
+word_last_2 = word[len(word) - 2:len(word)]
 middle_word = word[1:len(word) - 1]
 # YOUR CODE GOES HERE. PLEASE REMOVE THIS LINE
 print(f"First 3 letters: {word_first_3}")

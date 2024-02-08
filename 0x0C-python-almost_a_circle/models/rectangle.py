@@ -103,8 +103,10 @@ class Rectangle(Base):
             raise Exception("y must be >= 0")
         self.__y = value
     def area(self):
+        """Returns the area of the Rectangle"""
         return self.width * self.height
     def display(self):
+        """Displays the rectangle using #"""
         row_list = ["#" for x in range(self.width)]
         row = ''.join(row_list) + '\n'
         rect = ''
@@ -112,5 +114,5 @@ class Rectangle(Base):
             rect += row
         return rect
     def __str__(self):
+        """Returns a string representation of the properties of the Rectangle object"""
         return f"[Rectangle] ({self.id}) {self.x}/ {self.y} - {self.width}/ {self.height}"
-        

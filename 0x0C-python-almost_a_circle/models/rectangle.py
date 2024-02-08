@@ -58,7 +58,7 @@ class Rectangle(Base):
         if type(value) != int:
             raise TypeError("width must be an integer")
         if (value <= 0):
-            raise ValueError("width must be > 0")
+            raise ValueError("width must be >= 0")
         self.__width = value
 
     @property
@@ -72,7 +72,7 @@ class Rectangle(Base):
         if type(value) != int:
             raise Exception("height must be an integer")
         if (value <= 0):
-            raise Exception("height must be > 0")
+            raise Exception("height must be >= 0")
         self.__height = value
     
     @property
@@ -86,7 +86,7 @@ class Rectangle(Base):
         if type(value) != int:
             raise Exception("x must be an integer")
         if (value <= 0):
-            raise Exception("x must be > 0")
+            raise Exception("x must be >= 0")
         self.__x = value
 
     @property
@@ -100,7 +100,15 @@ class Rectangle(Base):
         if type(value) != int:
             raise Exception("y must be an integer")
         if (value <= 0):
-            raise Exception("y must be > 0")
+            raise Exception("y must be >= 0")
         self.__y = value
     def area(self):
         return self.width * self.height
+    def display(self):
+        row_list = ["#" for x in range(self.width)]
+        row = ''.join(row_list) + '\n'
+        rect = ''
+        for i in range(self.height):
+            rect += row
+        return rect
+        
